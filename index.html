@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="shortcut icon"
-      href="./media/tecnoven_logo - copia.ico"
-      type="image/x-icon"
-    />
-    <title>Funnel de Clientes</title>
-  </head>
-  <body>
-    <div class="login-box">
-      <h2>Iniciar Sesion</h2>
-      <form form action="conexion.php" method="POST">
-        <div class="user-box">
-          <input placeholder="Usuario" type="text" name="usuario" required="" />
-          <label for="usuario">Usuario</label>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Prueba de pagina</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi sitio web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+          </ul>
         </div>
-        <div class="user-box">
-          <input placeholder="Contraseña" type="password" name="contrasena" required="" />
-          <label for="contrasena">Contraseña</label>
-        </div>
-        <a href="pagina.php">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Submit
-        </a>
-      </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">¡Bienvenidos a mi sitio web!</h1>
+        <p class="lead">Aquí podrás encontrar información sobre nuestros proyectos y cómo podemos ayudarte.</p>
+      </div>
     </div>
-  </body>
+
+    <!-- Blog section -->
+    <div class="container my-5">
+      <h2>Últimos artículos</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 my-2">
+          <div class="card">
+            <img src="https://picsum.photos/400/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Título del artículo 1</h5>
+              <p class="card-text">Breve descripción del artículo 1.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-2">
+          <div class="card">
+            <img src="https://picsum.photos/400/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Título del artículo 2</h5>
+              <p class="card-text">Breve descripción del artículo 2.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <section class="container my-5">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Título del post</h5>
+                    <p class="card-text">Descripción breve del post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Título del post</h5>
+                    <p class="card-text">Descripción breve del post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Título del post</h5>
+                    <p class="card-text">Descripción breve del post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
